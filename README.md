@@ -4,3 +4,4 @@
 # в таблице 'users' поля: 'id' - int автоинкремента, 'login' - varchar, 'password' - varchar.
 # в файле 'includes/config.php' нужно указать данные БД
 # также работу приложения можно посмотреть на <a href="http://flowercup.ru">flowercup.ru</a>
+# в общей сложности на выполнение задания ушло 6 часов
