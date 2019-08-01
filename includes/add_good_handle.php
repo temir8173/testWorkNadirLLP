@@ -6,9 +6,6 @@ $good_name = $_POST['good_name'];
 $text = $_POST['text'];
 $categorie_id = $_POST['categorie_id'];
 
-echo $good_name;
-echo $text;
-
 
 
 mysqli_query($connection, "
