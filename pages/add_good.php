@@ -95,12 +95,13 @@
      $("#add_good").submit(function() {
        $.ajax({
          type: "POST",
+         data: $(this).serialize(),
          url: "../includes/add_good_handle.php",
-         data: $(this).serialize()
-       }).done(function() {
-         $(this).find("input").val("");
-         alert("Товар успешно добавлен!");
-         $("#add_good").trigger("reset");
+         success: function(data) {
+            $(this).find("input").val("");
+           alert("Товар успешно добавлен!");
+           $("#add_good").trigger("reset");
+         }
        });
        location.reload();
        return false;

@@ -8,7 +8,6 @@
         <ul>
           <li><a href="/">Все категории</a></li>
           <li><a href="/pages/about_me.php">Обо мне</a></li>
-          <li><a target="blank" href="<?php echo $config['vk_url'] ?>">Я Вконтакте</a></li>
         </ul>
       </nav>
     </div>

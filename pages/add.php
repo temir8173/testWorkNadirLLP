@@ -129,12 +129,14 @@
         $.ajax({
           type: "POST",
           url: "../includes/add_cat.php",
-          data: $(this).serialize()
-        }).done(function() {
-          $(this).find("input").val("");
-          alert("Категория успешно добавлена!");
-          $("#add_cat").trigger("reset");
+          data: $(this).serialize(),
+          success: function(data){
+            $(this).find("input").val("");
+            alert("Категория успешно добавлена!");
+            $("#add_cat").trigger("reset");
+          }
         });
+
         location.reload();
         return false;
       });
